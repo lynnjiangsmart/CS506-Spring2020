@@ -1,31 +1,26 @@
-def draw_tree(shape='nora'):
+def draw_tree(size,shape='nora'):
 	VALID = ['nora','lynn']
 	if shape not in VALID:
 		raise ValueError('shape is undefiend')
 	
 	if shape == 'nora':
-    		print(" "," ","n"," "," ")
-    		print()
-    		print(" ","n"," ", "n "," ")
-    		print ()
-    		print("n"," "," "," ","n")
-    		print()
-    		print("  ","||","  ")
+    		for i in range(size):
+		    print("n" * i)
+		    print()
+  		print("||")
+
     		return    
 	
 
 		 
 
 	else:
-	   print(" "," ","l"," "," ")
-    	   print()
-    	   print(" ","l"," ", "l "," ")
-    	   print ()
-    	   print("l"," "," "," ","l")
-    	   print()
-    	   print("  ","||","  ")
-	
-	return
+	   for j in range(size):
+		print("l" * j)
+		print()
+	   print("||")
+
+ 		return
 
 
 
